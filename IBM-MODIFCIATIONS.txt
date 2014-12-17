@@ -1,0 +1,11 @@
+Fix bb10 asks for geolocation permissions
+
+- Cordova RTC work item number: 60313
+- Apache Cordova Jira issue:
+  https://issues.apache.org/jira/browse/CB-5334,
+  https://issues.apache.org/jira/browse/CB-5253
+- IBM PMR: 41931,057,649
+- Worklight RTC work item number: APAR 60273
+- Full description: BB10 app with geo plugin would ask for permission to
+  use the plugin each tiem it was run. Fixed by using the exec proxy. This
+  fix also required backporting CB-5253 removal of webworks.exec
